@@ -23,3 +23,17 @@ void main(void){
     }
 }
 
+
+void main(void){
+    int temp,i,j;
+    int num[]={10,2,5,1,6};
+       for (i = 0; i <5- 1; i++) {
+        for (j = 0; j <5- i - 1; j++) {
+            if (num[j] < num[j + 1]) { // Swap elements if in wrong order
+                temp = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = temp;
+            }
+        }
+    }
+}
